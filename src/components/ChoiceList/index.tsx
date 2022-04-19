@@ -16,7 +16,9 @@ const ChoiceList: FC<ChoiceListProps> = ({
 }) => {
   return (
     <>
-      
+      <Box>
+        <Button variant="outlined">{choices}</Button>
+      </Box>
     </>
   )
 }

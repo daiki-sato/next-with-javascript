@@ -23,11 +23,17 @@ type QuizProps = {
 }
 
 const Quiz: FC<QuizProps> = ({ quiz }) => {
-
-
   return (
     <>
-      
+      <Box>
+        <Typography variant="subtitle1" component="h2">
+          {quiz.id}. この地名はなんて読む？
+          <img src={`/img/kuizy0${quiz.id}.png`} alt="" />
+          {quiz.choices.map((choices) => {
+            return <ChoiceList choices={choices} key={choices.id}></ChoiceList>
+          })}
+        </Typography>
+      </Box>
     </>
   )
 }

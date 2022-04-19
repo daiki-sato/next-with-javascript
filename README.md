@@ -1,9 +1,9 @@
-# Quizy With React
+# Quizy with React and TypeScript
 
 ## Set up
 
 ```
-docker-compose up --build -d
+docker-compose build
 ```
 
 ## Development
